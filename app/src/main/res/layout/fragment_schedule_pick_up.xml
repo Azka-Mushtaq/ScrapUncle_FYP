@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SchedulePickUpFragment"
+    >
+<LinearLayout
+
+    android:id="@+id/profileFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- selected scrapitem-->
+    <LinearLayout
+        android:id="@+id/selected_scrap_item_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        >
+
+        <TextView
+            android:id="@+id/selected_scrap_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Upload Image of Scrap"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            android:layout_marginVertical="24dp"
+            app:drawableStartCompat="@drawable/ic_upload"
+            android:drawableTint="@color/gray"
+            android:drawablePadding="8dp"/>
+
+        <ImageView
+            android:id="@+id/selected_scrap_item_tick"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_tick"
+            android:layout_gravity="center"
+            app:tint="@color/lightGreen"
+            android:layout_marginStart="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="center"
+            >
+            <ImageButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                app:tint="@color/lightGray"
+                android:background="@color/transparent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/selected_scrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:backgroundTint="@color/lightGreen"
+        android:visibility="gone"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/gray"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:backgroundTint="@color/white"
+            android:padding="16dp"
+            android:text="Click Here to Upload Imge"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="4dp"
+
+        android:background="@color/lightGray" />
+    <!-- Estimatied Weight-->
+    <LinearLayout
+        android:id="@+id/estimated_weight_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        >
+
+        <TextView
+            android:id="@+id/estimated_weight_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Estimated weight"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_weight"
+            android:drawableTint="@color/gray"
+            android:drawablePadding="8dp"/>
+
+        <ImageView
+            android:id="@+id/estimated_weight_tick"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_tick"
+
+            android:layout_gravity="bottom"
+
+            app:tint="@color/lightGreen"
+            android:layout_marginStart="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/upload_image"
+                android:contentDescription="description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                app:tint="@color/lightGray"
+                android:background="@color/transparent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--options for estimated Weight-->
+    <LinearLayout
+        android:id="@+id/estimated_weight"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"
+
+        >
+
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+           >
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Less than 20kg"
+                android:padding="18dp"
+                android:gravity="center"
+                android:button="@null"
+             />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20-50kg"
+                android:textAlignment="center"
+                android:padding="18dp"
+                android:button="@null"
+                />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="50-100kg"
+                android:padding="18dp"
+                android:button="@null"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100-700kg"
+                android:padding="18dp"
+                android:button="@null"
+                android:textAlignment="center" />
+
+
+            <RadioButton
+                android:id="@+id/option5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="More than 700kg"
+                android:padding="18dp"
+                android:button="@null"
+                android:textAlignment="center"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="4dp"
+
+        android:background="@color/lightGray" />
+    <!-- Selected Date Weight-->
+    <LinearLayout
+        android:id="@+id/selected_date_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"        >
+
+        <TextView
+            android:id="@+id/selected_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Selected date"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_calendar"
+            android:drawableTint="@color/gray"
+            android:drawablePadding="8dp"/>
+        <ImageView
+            android:id="@+id/selected_date_tick"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_tick"
+
+            android:layout_gravity="bottom"
+
+            app:tint="@color/lightGreen"
+            android:layout_marginStart="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="center"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                app:tint="@color/lightGray"
+                android:background="@color/transparent"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <DatePicker
+        android:visibility="gone"
+        android:id="@+id/selected_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="calendar"
+        android:calendarViewShown="false"
+        android:headerBackground="@color/lightGreen"
+        android:backgroundTint="@color/lightGreen" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/lightGray" />
+
+
+    <!-- Selected Date Weight-->
+    <LinearLayout
+        android:id="@+id/selected_time_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        >
+
+        <TextView
+            android:id="@+id/selected_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Selected time"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_time"
+            android:drawableTint="@color/gray"
+            android:drawablePadding="8dp"/>
+        <ImageView
+            android:id="@+id/selected_time_tick"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_tick"
+
+            android:layout_gravity="bottom"
+
+            app:tint="@color/lightGreen"
+            android:layout_marginStart="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="center"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                app:tint="@color/lightGray"
+                android:background="@color/transparent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TimePicker
+        android:visibility="gone"
+        android:timePickerMode="spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_selected"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/lightGray" />
+
+    <!-- Selected Date Weight-->
+    <LinearLayout
+        android:id="@+id/pickup_address_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        >
+
+        <TextView
+            android:id="@+id/pickup_address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Pickup address"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_location"
+            android:drawableTint="@color/gray"
+            android:drawablePadding="8dp"/>
+        <ImageView
+            android:id="@+id/pickup_address_tick"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_tick"
+
+            android:layout_gravity="bottom"
+
+            app:tint="@color/lightGreen"
+            android:layout_marginStart="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="center"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                app:tint="@color/lightGray"
+                android:background="@color/transparent"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="6dp"
+        android:id="@+id/pickup_address_layout"
+        android:visibility="gone">
+        <ListView
+            android:id="@+id/show_addresses_list_view"
+            android:layout_marginVertical="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/address_item"
+            android:divider="@color/transparent"
+            android:scrollbars="none"
+            android:dividerHeight="8dp"/>
+       <!-- <TextView
+            android:visibility="visible"
+            android:id="@+id/no_address_added"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Address added Yet!"
+            android:gravity="center"
+            android:padding="16dp"
+            />-->
+
+
+       <!-- <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_address"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_borders"
+            android:backgroundTint="@color/white"
+            android:text="Add Another Address"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+
+            />
+-->
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="7dp"
+        android:background="@color/lightGray" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/incomplete_fields_warning"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="24dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:textSize="18sp"
+        android:text="Please fill all the required details to schedule pickup"
+        app:drawableStartCompat="@drawable/ic_contact_support"
+        app:drawableTint="@color/gray" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SchedulePickupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SchedulePickup"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="400dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@drawable/curved_borders"
+        android:padding="8dp"
+        android:backgroundTint="@color/lightGreen"
+    />
+
+</LinearLayout>
+
+</ScrollView>

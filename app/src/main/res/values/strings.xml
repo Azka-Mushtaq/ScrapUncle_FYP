@@ -1,0 +1,73 @@
+<resources>
+    <string name="google_map_api_key">AIzaSyAqML_UiFdR1t8Zt1cwTxBAHcyUPNjJKoY</string>
+    <string name="app_name">ScrapBuddy</string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
+
+
+    <!-- res/values/strings.xml -->
+    <string-array name="role_array">
+        <item>User</item>
+        <item>Scrap Picker</item>
+    </string-array>
+
+    <!-- Profile -->
+    <!-- Login -->
+    <string name="login_as_scrap_picker">Login as Scrap Picker</string>
+    <string name="login_as_user">Login as User</string>
+
+
+    <!-- Support -->
+    <string name="support_str">ScrapUncle is always actinve in supporting thier customers:\n
+    </string>
+    <string name="contact_no"> +920000000000</string>
+
+    <!-- Second Page -->
+    <string name="welcomeMessage">Welcome to ScrapUncle</string>
+    <string name="PapersWastesPlastic">PAPERS | PLASTICS | METALS | EWASTE</string>
+    <string name="GetStarted">GET STARTED</string>
+
+
+    <string name="GetOtp">Get OTP</string>
+    <string name="MobileNumber">MOBILE NUMBER</string>
+    <string name="referralCode">REFERRAL CODE</string>
+
+    <!-- Home Fragment -->
+    <string name="SchedulePickup">SCHEDULE A PICKUP</string>
+    <string name="RiderViewSchedulePickup">VIEW SCHEDULED PICKUPS</string>
+    <string name="impactByScrapUncle">Impact by ScrapUncle</string>
+
+
+    <!-- Mobile Number-->
+    <string name="EnterMobileNumber">ENTER YOUR MOBILE NUMBER TO START SELLING RECYCLABLES</string>
+    <string name="getOtp">Get OTP</string>
+    <string name="PakistanFirstDigitalPlatform">Pakistans first digital platform to sell recycles</string>
+    <string name="callus">Call us at </string>
+
+
+    <!-- Header -->
+    <string name="profile_icon">Profile</string>
+    <string name="notifications_icon">Notifications</string>
+    <string name="menu_icon">Menu</string>
+
+    <!-- Summary Cards -->
+    <string name="active_requests">Active Requests</string>
+    <string name="upcoming_pickups">Upcoming Pickups</string>
+    <string name="completed_requests">Completed Requests</string>
+
+    <!-- Performance Metrics -->
+    <string name="average_pickup_time">Average Pickup Time</string>
+    <string name="user_rating">User Rating</string>
+    <string name="total_requests_completed">Total Requests Completed</string>
+
+
+    <!--Pickups-->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+</resources>

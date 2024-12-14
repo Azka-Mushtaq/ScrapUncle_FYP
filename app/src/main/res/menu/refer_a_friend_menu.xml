@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/refer_in_progress_nav_item"
+        android:title="In Progress (0)"
+
+        />
+
+    <item
+        android:id="@+id/refer_completed_nav_item"
+        android:title="Completed (0)"
+        />
+</menu>

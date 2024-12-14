@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_signup_background"
+    android:backgroundTint="@color/lightGreen"
+    android:gravity="center"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".SignUp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/signup_form_border"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Logo at the top -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_logo" />
+
+
+        <!-- Sign Up Text -->
+        <TextView
+
+            android:id="@+id/signUpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginVertical="16dp"
+            android:text="Sign Up"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Name"
+            android:background="@drawable/input_field_border"
+            android:inputType="textPersonName"
+            android:padding="12dp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Email"
+            android:background="@drawable/input_field_border"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <!-- Phone number Input -->
+        <EditText
+            android:id="@+id/phoneNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Phone Number"
+            android:background="@drawable/input_field_border"
+            android:inputType="phone"
+            android:padding="12dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Create Password"
+            android:inputType="textPassword"
+            android:background="@drawable/input_field_border"
+            android:padding="12dp" />
+
+        <!--User or rider-->
+        <Spinner
+            android:id="@+id/userOrRider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/input_field_border"
+            android:spinnerMode="dropdown"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/signup_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="16dp"
+            android:text="Please fill all the required details to schedule pickup"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:drawableStartCompat="@drawable/ic_contact_support"
+            app:drawableTint="@color/gray" />
+
+        <!-- Sign Up Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/curved_borders"
+            android:backgroundTint="@color/lightGreen"
+            android:text="Sign Up"
+            android:textColor="@android:color/white" />
+
+        <!-- Terms and Conditions -->
+        <TextView
+            android:id="@+id/termsTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="By Signing Up, you agree to our Terms  Privacy Policy"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+
+            android:textSize="14sp" />
+
+        <!-- Social Media Sign Up Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Google -->
+            <ImageView
+                android:id="@+id/googleSignUpButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_google" />
+
+            <!-- Facebook -->
+            <ImageView
+                android:id="@+id/facebookSignUpButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_facebook"
+                app:tint="@color/black" />
+
+            <!-- Twitter -->
+            <ImageView
+                android:id="@+id/twitterSignUpButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_email_03" />
+
+        </LinearLayout>
+
+        <!-- Login Text -->
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Already have an account? Login"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>

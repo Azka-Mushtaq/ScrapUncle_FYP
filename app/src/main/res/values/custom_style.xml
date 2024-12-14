@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="RadioButtonAsButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:button">@null</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:backgroundTint">?attr/colorPrimary</item>
+    </style>
+</resources>

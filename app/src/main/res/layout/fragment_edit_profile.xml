@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditProfileFragment"
+    android:padding="24dp"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/edit_profile_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:background="@android:color/transparent"
+            android:contentDescription="Description"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintLeft_toRightOf="@id/leftGuideline"
+            app:layout_constraintTop_toTopOf="@id/topGuideline"
+            app:layout_constraintBottom_toBottomOf="@id/navGuideline"
+            />
+
+        <TextView
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="5dp"
+            android:text="Back"
+            android:textSize="18sp"
+
+            app:layout_constraintBottom_toBottomOf="@id/navGuideline"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_gravity="center"
+            app:layout_constraintRight_toRightOf="@id/rightGuideline"
+            app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/scrapUncleSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        app:layout_constraintTop_toBottomOf="@id/navGuideline"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="16dp"
+
+        />
+
+
+    <EditText
+        android:paddingVertical="20dp"
+        android:id="@+id/edit_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Name"
+        />
+
+    <!-- Email -->
+
+    <EditText
+        android:paddingVertical="20dp"
+        android:id="@+id/edit_email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Email Address"
+        />
+    <EditText
+        android:paddingVertical="20dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/edit_phone_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Phone Number"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/edit_profile_warning"
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:textSize="14sp"
+        android:text="Please fill all the required details to schedule pickup"
+        app:drawableStartCompat="@drawable/ic_contact_support"
+        app:drawableTint="@color/gray" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_changes_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:background="@drawable/curved_borders"
+
+        android:backgroundTint="@color/lightGreen"
+        android:textColor="@color/white"
+        android:layout_marginVertical="8dp"/>
+</LinearLayout>

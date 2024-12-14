@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReferAFriendFragment"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        >
+        <ImageButton
+            android:id="@+id/refer_a_friend_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:background="@android:color/transparent"
+            android:contentDescription="Description"
+            android:src="@drawable/ic_arrow_back"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:gravity="end"
+            android:padding="5dp"
+            android:text="Back"
+            app:layout_constraintHorizontal_bias="0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="start"
+            android:text="Earn rewards by invitying your friends to join"/>
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:src="@drawable/img_refer_a_friend_1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:textSize="16dp"
+       android:text="You get a cash rewards when they sign up using your link and complete the required number of deliveries or hours"
+       />
+
+
+ <com.google.android.material.bottomnavigation.BottomNavigationView
+     android:layout_width="match_parent"
+     android:layout_height="50dp"
+     app:menu="@menu/refer_a_friend_menu"
+
+     />
+    <ImageView
+        android:padding="16dp"
+        android:layout_marginVertical="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_refer_a_friend_2"/>
+
+</LinearLayout>

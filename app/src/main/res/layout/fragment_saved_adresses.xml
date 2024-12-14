@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SavedAdressesFragment"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        >
+        <ImageButton
+            android:id="@+id/saved_address_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            android:background="@android:color/transparent"
+            android:contentDescription="Description"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintLeft_toRightOf="@id/leftGuideline"
+            app:layout_constraintTop_toTopOf="@id/topGuideline"
+            app:layout_constraintBottom_toBottomOf="@id/navGuideline"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@id/rightGuideline"
+            app:layout_constraintTop_toTopOf="@id/topGuideline"
+            app:layout_constraintBottom_toBottomOf="@id/navGuideline"
+            android:textSize="18sp"
+            android:gravity="end"
+            android:padding="5dp"
+            android:text="Back"
+            app:layout_constraintHorizontal_bias="0" />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+
+        android:id="@+id/scrapUncleSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Adresses"
+        app:layout_constraintTop_toBottomOf="@id/navGuideline"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/saved_addresses_list_view"
+        android:layout_marginVertical="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/address_item"
+        android:divider="@color/transparent"
+        android:scrollbars="none"
+        android:dividerHeight="8dp"/>
+
+
+    <TextView
+        android:id="@+id/edit_email_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YOU HAVE NO ADDRESSES SAVED YET!"
+        android:textColor="@color/lightGray"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="16sp"
+
+
+        />
+
+
+        <ImageView
+            android:layout_marginVertical="16dp"
+            android:id="@+id/add_new_address"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_add_circle"
+            app:tint="@color/lightGreen"
+            android:layout_gravity="right"
+            />
+
+
+</LinearLayout>

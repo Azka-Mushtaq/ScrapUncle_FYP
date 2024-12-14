@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddPickUpAddress"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="@drawable/curved_borders"
+    android:backgroundTint="@color/white"
+
+    >
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/edit_profile_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:background="@android:color/transparent"
+            android:contentDescription="Description"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintLeft_toRightOf="@id/leftGuideline"
+            app:layout_constraintTop_toTopOf="@id/topGuideline"
+            app:layout_constraintBottom_toBottomOf="@id/navGuideline"
+            />
+
+        <TextView
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="5dp"
+            android:text="Back"
+            android:textSize="18sp"
+
+            app:layout_constraintBottom_toBottomOf="@id/navGuideline"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_gravity="center"
+            app:layout_constraintRight_toRightOf="@id/rightGuideline"
+            app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    </LinearLayout>
+
+-->
+
+
+    <TextView
+        android:id="@+id/address_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Pickup Address"
+        app:layout_constraintTop_toBottomOf="@id/navGuideline"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingVertical="16dp"
+
+        />
+
+    <EditText
+        android:paddingVertical="20dp"
+        android:id="@+id/street"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Street"
+        />
+    <EditText
+        android:paddingVertical="20dp"
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        />
+
+    <!-- Email -->
+
+    <EditText
+        android:paddingVertical="20dp"
+        android:id="@+id/pincode_zipcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pincode/Zipcode"
+        android:inputType="phone"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/incomplete_fields_warning"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="24dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:textSize="18sp"
+        android:text="Please fill all the required details to schedule pickup"
+        app:drawableStartCompat="@drawable/ic_contact_support"
+        app:drawableTint="@color/gray" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_and_proceed_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save and Proceed"
+        android:background="@drawable/curved_borders"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/lightGreen"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="20dp"/>
+</LinearLayout>

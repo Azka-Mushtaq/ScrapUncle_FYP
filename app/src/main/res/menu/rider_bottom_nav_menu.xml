@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_nav_home_rider"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+
+        />
+    <item
+        android:id="@+id/bottom_nav_rates_rider"
+        android:icon="@drawable/ic_prices"
+        android:title="Rates" />
+    <item
+        android:id="@+id/bottom_nav_in_schedule_rider"
+        android:icon="@drawable/ic_schedule_pickup"
+        android:title="Schedule"/>
+    <item
+        android:id="@+id/bottom_nav_pickup_rider"
+        android:icon="@drawable/ic_pickup"
+        android:title="Pickups"/>
+    <item
+        android:id="@+id/bottom_nav_profile_rider"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"/>
+</menu>

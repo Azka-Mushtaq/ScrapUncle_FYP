@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CompletedFragment"
+    android:orientation="vertical"
+   >
+
+
+
+    <ListView
+        android:paddingHorizontal="24dp"
+        android:id="@+id/completed_pickup_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:dividerHeight="16dp"
+        android:divider="@color/transparent"
+        tools:listitem="@layout/pickup_list_item"
+        />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_completed_pickups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="There is no Completed Pickup at the moment"
+        android:textColor="@color/lightGray"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="16sp"
+
+        />
+
+</LinearLayout>

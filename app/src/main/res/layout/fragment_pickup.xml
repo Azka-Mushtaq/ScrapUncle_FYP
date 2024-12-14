@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PickUpFragment"
+
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/lightGreen"
+        android:backgroundTint="@color/transparent"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorGravity="bottom"
+        app:tabSelectedTextColor="@color/lightGreen"
+        app:tabIndicatorAnimationMode="fade"
+
+        android:paddingVertical="8dp"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_upcoming_pickups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upcoming" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_completed_pickups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="235dp"
+        android:id="@+id/pickup_frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/img_pickup_bottom" />
+
+
+</RelativeLayout>

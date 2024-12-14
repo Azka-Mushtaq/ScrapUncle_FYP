@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RadioButtonAsButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:button">@null</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:backgroundTint">?attr/colorPrimary</item>
+    </style>
+
+
+    <!-- res/values/styles.xml -->
+
+        <style name="CustomAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+            <item name="android:buttonStyle">@style/CustomAlertDialogButton</item>
+        </style>
+
+        <style name="CustomAlertDialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+            <item name="android:background">@drawable/radio_button_selected</item>
+            <item name="android:textColor">@android:color/white</item>
+        </style>
+</resources>
